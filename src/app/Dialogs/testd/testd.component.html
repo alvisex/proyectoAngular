@@ -1,0 +1,38 @@
+<p>
+  {{data.name}}
+</p>
+<br>
+<div class="containerForm">
+  <form  #formm="ngForm" name="formulario" (ngSubmit)="enviar(formm)" >
+
+    <mat-form-field>
+      <input matInput placeholder="Nombre" name="name" ngModel value="{{data.name}}" >
+    </mat-form-field>
+
+    <mat-form-field>
+      <textarea matInput placeholder="Descripción" name="description" ngModel value="{{data.description}}"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Categoría" name="category" ngModel >
+        <mat-option value="option">Basica</mat-option>
+        <mat-option value="option">Profesional</mat-option>
+        <mat-option value="option">Premium</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Imagen (nombre del archivo)" name="image" ngModel  value="{{data.image}}">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Precio" type="number" name="price" ngModel value="{{data.price}}" >
+    </mat-form-field>
+
+    <button type="button" mat-raised-button color="primary" name="button" [mat-dialog-close]="formm.value" > Guardar </button>
+  </form>
+</div>
+
+<div>
+  <button mat-raised-button (click)="close()"> Cerrar modal</button>
+</div>

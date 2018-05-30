@@ -1,0 +1,34 @@
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-content: center;
+  margin-left: 30%;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  min-width: 300px;
+}
+
+.example-container > * {
+  width: 100%;
+}
+
+.example-header {
+  margin-top: 20pt;
+  min-height: 64px;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}

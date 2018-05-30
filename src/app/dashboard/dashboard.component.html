@@ -1,0 +1,16 @@
+<div class="carousel">
+  <a class="carousel-item" href="#one!"><img src="../../assets/tarro.jpg"></a>
+  <a class="carousel-item" href="#two!"><img src="../../assets/tarro2.jpg"></a>
+  <a class="carousel-item" href="#three!"><img src="../../assets/tarro3.jpg"></a>
+  <a class="carousel-item" href="#four!"><img src="../../assets/tarro4.jpg"></a>
+  <a class="carousel-item" href="#five!"><img src="../../assets/tarro5.jpg"></a>
+</div>
+<div>
+  <b>{{ today | date:'yyyy-MM-dd HH:mm:ss'}}</b>
+</div>
+<button mat-raised-button="primary" (click)="abrirCanvas()">Abrete sésamo</button>
+<br>
+<div>
+  <qr-code [value]="'5af4fd14d5708d1cc8ddb7d5'" [size]="150"></qr-code>
+</div>
+<br>

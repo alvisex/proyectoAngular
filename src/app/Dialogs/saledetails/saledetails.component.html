@@ -1,0 +1,25 @@
+<div class="" *ngIf="data">
+  <h5>ID: {{ data._id }} </h5>
+  <p>Total=  ${{ data.total }}</p>
+  <p>Fecha de Venta: {{ data.date  | date:'yyyy-MM-dd HH:mm:ss' }}</p>
+  <br>
+  <h6>Productos vendidos</h6>
+  <table>
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Item Name</th>
+      <th>Item Price</th>
+      <th>Item Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let p of data.productosV">
+      <td>{{p._id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.quantity}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

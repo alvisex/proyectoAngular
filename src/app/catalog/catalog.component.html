@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m4">
+      <div class="card " *ngIf="productone">
+        <div class="card-image" >
+          <img src="../../assets/tarro.jpg" class="imagen">
+          <span class="card-title">{{productone.name}} </span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">attach_money</i></a>
+        </div>
+        <div class="card-content">
+          <p> {{productone.description}} !! </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <mat-card class="example-card" *ngFor="let p of products" >
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Id {{p.id}}</mat-card-title>
+      <mat-card-subtitle>Nombre {{p.name}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <a mat-button routerLink="/detalles/{{p._id}}"> Detalles </a>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

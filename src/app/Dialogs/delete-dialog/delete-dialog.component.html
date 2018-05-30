@@ -1,0 +1,11 @@
+<p>
+  Estás seguro de elimnar el producto: {{ data.name }}
+</p>
+<p>
+  Id: {{ data._id}}
+</p>
+
+<button mat-raised-button (click)="confirmDelete()" [mat-dialog-close]="1" > Si, que se muera</button>
+<br>
+<button mat-raised-button (click)="close()"></button>
+

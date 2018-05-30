@@ -1,0 +1,16 @@
+.example-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+button{
+  font-family: Roboto,Helvetica Neue,sans-serif;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+li > a {
+  color: #00acc1;
+  font-size: 1.15em;
+}
