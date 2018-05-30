@@ -1,17 +1,28 @@
 .example-card {
   max-width: 200px;
+  margin: 20px;
+  list-style: none;
 }
 
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('https://seeklogo.com/images/A/angular-icon-logo-9946B9795D-seeklogo.com.png');
   background-size: cover;
 }
 
-.card-title{
+.card-t
+.iitle{
   text-shadow: black 0.1em 0.1em 0.2em;
-}
-.imagen{
+}magen{
   max-height: 180px;
+}
+.container{
+  margin-left: 1em;
+  margin-right: 1em;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
 }
 .card-content{
   color: #222222;
@@ -23,4 +34,10 @@
 
 mat-card{
   display: block;
+}
+.card{
+  width: 25%;
+  bottom: 2180px;
+  left: 100px;
+
 }
