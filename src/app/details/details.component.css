@@ -1,12 +1,22 @@
 .example-card {
   max-width: 200px;
+  margin-left: 20em;
+  margin-right: 1em;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
 }
 
 .example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-image: url('https://seeklogo.com/images/A/angular-icon-logo-9946B9795D-seeklogo.com.png');
   background-size: cover;
 }
 
 .descripcion{
   font-size: small;
+}
+.container{
+
 }

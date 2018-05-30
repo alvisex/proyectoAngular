@@ -1,21 +1,26 @@
 
-<mat-card class="example-card" *ngIf="product">
+<div class="example-card" *ngIf="product">
+  <mat-card>
   <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
+    <div mat-card-avatar class="example-header-image" ></div>
     <mat-card-title>Id {{product.id}}</mat-card-title>
     <mat-card-subtitle>Nombre {{product.name}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image src="../../assets/{{product.image}}">
-  <mat-card-content>
-    <p class="descripcion">
-      {{product.description}}
-    </p>
+  <img mat-card-image  >
+  <p class="descripcion">
+    {{product.description}}
+  </p>
+  </mat-card>
+  <mat-card>
+
     <br>
     <div>
       <qr-code  id="qrc"  [value]="product._id.toString()"  [size]="150"></qr-code>
     </div>
-  </mat-card-content>
   <mat-card-actions>
     <button mat-button (click)="goBack()">Regresar</button>
   </mat-card-actions>
-</mat-card>
+  </mat-card>
+
+</div>
+
